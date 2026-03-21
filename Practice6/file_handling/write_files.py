@@ -1,7 +1,6 @@
-with open("myfile.txt", "w") as file:
-    file.write("Hi, my name is Aisaule \n")
-    file.write("I love KBTU")
-    
 
-               
+with open('myfile.txt', 'w') as f:
+    f.write("First line\n")
 
+with open('myfile', 'a') as f:
+    f.write("Second line added with 'a' mode\n")

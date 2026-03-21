@@ -1,13 +1,9 @@
-with open("myfile.txt", "r") as file:
-    print(file.read())
 
-with open("myfile.txt") as f:
-  print(f.read(5))
+with open('myfile.txt', 'r') as f:
 
-with open("myfile.txt") as f:
-  print(f.readline())
+    for line in f:
+        print(line.strip())
 
-
-with open("myfile.txt") as f:
-  for x in f:
-    print(x)
+with open('myfile.txt', 'r') as f:
+    lines = f.readlines()
+    print(len(lines))
