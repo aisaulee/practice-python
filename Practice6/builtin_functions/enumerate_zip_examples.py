@@ -15,3 +15,10 @@ for name, phone in zip(names, phones):
 
 for index, name in enumerate(names, start=1):
     print(f"{index}. {name}")
+
+
+students = ["student1", "student2", "student3"]
+teachers = ["teacher1", "teacher2", "teacher3"]
+
+for student, teacher in zip(students, teachers):
+    print(f"Student: {student} Teacher: {teacher} ")
