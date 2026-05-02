@@ -24,7 +24,7 @@ def insert_contacts_csv(filenum):
 
     try:
         with psycopg2.connect(**config) as conn:
-            with conn.cursor() as cur:
+            with conn.cursor() as curМ с:
                 with open(filenum, 'r') as f:
                     read=csv.reader(f)
                     for row in read:
